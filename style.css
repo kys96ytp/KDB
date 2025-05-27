@@ -5,18 +5,16 @@
     display:grid;
     grid-template-columns:200px 1fr;
 }
-#article .divider{
-    padding:0;
-    height:1px;
-    border:none;
-    background-color:black;
+#article img{
+    border-top:1px solid black;
+    border-bottom:1px solid black;
 }
 #article h2{
     margin:0;
-    padding:10px 20px 10px 0;
+    padding:10px 0px 10px 20px;
 }
 #article p{
-    padding:20px;
+    padding-left:20px;
     margin:0;
 }
 #mode{
