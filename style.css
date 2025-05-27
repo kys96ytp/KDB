@@ -1,0 +1,117 @@
+#같은아이디는존재하면안됨{
+        color:skyblue;
+}
+#grid{
+    display:grid;
+    grid-template-columns:200px 1fr;
+}
+#article{
+    padding-left:20px;
+}
+#article h2{
+    margin:0;
+    padding:10px 0 10px 0;
+}
+#mode{
+    position:absolute;
+    left:20px;
+    top:235px;
+    width:100px;
+    height:50px;
+    font-size:20px;
+    border-radius:10px;
+}
+
+.js{
+        font-weight:bold;
+        color:skyblue;
+    }
+.pagenow{
+    color:navy;
+    font-weight:bold;
+    text-decoration:underline;
+}
+.king{
+    display:block;
+    background-color:aquamarine;
+    color:blueviolet;
+    text-align:center;
+    margin:0;
+    border-top:1px black solid;
+}
+.김덕배란누구인가{
+    border:none;
+    border-right:1px black solid;
+    padding-left:30px;
+    margin:0;
+    font-size:20px;
+}
+.center{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;                 /*수직정렬*/
+}
+.center ol{
+    list-style-position:inside;           /*얘가 list의 번호들을 중앙으로 옮겨주는 역할*/
+    text-align:left;                 /*text가 list의 번호가 있는 왼쪽으로 붙어서 표시*/
+    font-size:30px;
+    padding:0;
+    margin:0 auto;
+}
+a{
+    color:black;
+    text-decoration:none;
+}
+
+h1{
+    text-align:center;
+    font-size:50px;
+    border-bottom:2px black solid;
+    margin:0;
+    padding-top:60px;
+    background-color:skyblue;
+    background-image:url('logo.png');
+    background-size:200px;
+    background-repeat:no-repeat;
+    height:140px;
+}
+body{
+    margin:0;
+    font-family:'Arial','Helvetica',sans-serif;
+}
+
+@media(max-width:800px){
+    #grid{
+        display:inline-block;
+        text-align:center;
+    }
+    #grid ol{
+        display:inline-block;
+        text-align:left;
+        font-size:20px;
+        margin:0;
+    }
+    #mode{
+    position:absolute;
+    left:30px;
+    top:150px;
+    width:50px;
+    height:25px;
+    font-size:15px;
+    }
+
+    .김덕배란누구인가{
+        border:none;
+        padding:0;
+    }
+    #article{
+        padding:0px;
+        border-top:1px black solid;
+    }
+    h1{
+        background-size:100px;
+        height:65px;
+        padding-top:35px;
+        font-size:30px;
+    }
+}

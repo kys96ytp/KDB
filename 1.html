@@ -3,16 +3,48 @@
 <head>
     <title>김덕배란 누구인가</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <h1><a href="index.html">Kevin De Bruyne</a></h1>
-    <ol>
-        <li><a href="1.html">김덕배란 누구인가</a></li>
-        <li><a href="2.html">맨시티 통산 성적</a></li>
-        <li><a href="3.html">플레이 스타일</a></li>
-    </ol>
-    <h2>김덕배란 누구인가</h2>
-    <img src="kdb.webp" width="100%">
-    <p><a href="https://namu.wiki/w/%EC%BC%80%EB%B9%88%20%EB%8D%94%20%EB%B8%8C%EB%9D%BC%EC%9C%84%EB%84%88" target="_blank" title="KDB">케빈 더브라위너</a>. 명실상부 <strong>맨시티의 <u>레전드</u></strong>. 프리미어리그를 대표하는 미드필더이다.</p>
+    <div id="grid">
+        <ol class="김덕배란누구인가">
+            <li><a href="1.html"><span class='pagenow'>김덕배란 누구인가</span></a></li>
+            <li><a href="2.html">맨시티 통산 성적</a></li>
+            <li><a href="3.html">플레이 스타일</a></li>
+        </ol>
+        <div id="article">
+            <h2>김덕배란 누구인가</h2>
+            <img src="kdb.webp" width="100%">
+            <p><a href="https://namu.wiki/w/%EC%BC%80%EB%B9%88%20%EB%8D%94%20%EB%B8%8C%EB%9D%BC%EC%9C%84%EB%84%88" target="_blank" title="KDB">케빈 더브라위너</a>. 명실상부 <strong>맨시티의 <u>레전드</u></strong>. 프리미어리그를 대표하는 미드필더이다.</p>
+        </div>
+    </div>
+    <p>
+
+    <div id="disqus_thread"></div>
+    <script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+    var disqus_config = function () {
+    this.page.url = "http://example.com/html;"  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "html_1;" // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-2.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </p>
+    <input id="mode" type="button" value="dark" onclick="darkmodetoggle(this)">
 </body>
 </html>
