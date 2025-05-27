@@ -5,17 +5,24 @@
     display:grid;
     grid-template-columns:200px 1fr;
 }
-#article{
-    padding-left:20px;
+#article .divider{
+    padding:0;
+    height:1px;
+    border:none;
+    background-color:black;
 }
 #article h2{
     margin:0;
-    padding:10px 0 10px 0;
+    padding:10px 20px; 10px 0;
+}
+#article p{
+    padding:20px;
+    margin:0;
 }
 #mode{
     position:absolute;
-    left:20px;
-    top:235px;
+    right:20px;
+    top:65px;
     width:100px;
     height:50px;
     font-size:20px;
@@ -23,8 +30,8 @@
 }
 
 .js{
-        font-weight:bold;
-        color:skyblue;
+    font-weight:bold;
+    color:skyblue;
     }
 .pagenow{
     color:navy;
