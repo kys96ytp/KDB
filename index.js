@@ -9,6 +9,7 @@ let links = {
                 $('a').css('color',color);  //JQUERY 라이브러리를 이용한 코드
             },
             setpagenowcolor: function(color){
+                //document.querySelector('span.pagenow').style.color=color;
                 $('span.pagenow').css('color',color);
             }
         }
@@ -22,7 +23,16 @@ let body = {
         $('body').css('backgroundColor',color);
     },
     seth1backgroundcolor: function(color){
+        //document.querySelector('h1').style.backgroundColor=color;
         $('h1').css('backgroundColor',color);
+    }
+}
+let grid = {
+    setgridcolor: function(color){
+        // document.querySelector('.김덕배란누구인가').style.borderColor=color;
+        // document.querySelector('h1').style.borderColor=color;
+        $('.김덕배란누구인가').css('border-color',color);
+        $('h1').css('border-color',color);
     }
 }
 
@@ -34,6 +44,7 @@ function darkmodetoggle(x){
         links.setcolor('yellow');
         links.setpagenowcolor('skyblue');
         body.seth1backgroundcolor('navy');
+        grid.setgridcolor('white');
         }
     else{
         body.setbackgroundcolor('white');
@@ -42,5 +53,6 @@ function darkmodetoggle(x){
         links.setcolor('black');
         links.setpagenowcolor('navy');
         body.seth1backgroundcolor('skyblue');
+        grid.setgridcolor('black');
         }
 }
