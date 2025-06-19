@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./practice.css">
+    <script src="./practice.js" defer></script>
+    <title>Practice</title>
+</head>
+<body>
+    <form action="localhost/practice.php">
+        <input type="file" accept="image/*;capture=camera">
+        <label for="blue">blue</label>
+        <input type="checkbox" id="blue" name="color" value="blue">
+        <label for="red">red</label>
+        <input type="checkbox" id="red" name="color" value="red">
+        <label for="size95">95</label>
+        <input type="radio" id="size95" name="size" value="95">
+        <label for="size100">100</label>
+        <input type="radio" id="size100" name="size" value="100">
+        <button type="submit">제출</button>
+    </form>
+
+    <p id="result"></p>
+    <input id="target" type="name" />
+    <script>
+    var t = document.getElementById('target');
+    t.addEventListener('change', function(event){
+        document.getElementById('result').innerHTML=event.target.value;
+        console.log(this.value);
+    });
+    </script>
+
+    <ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+    </ul>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $('ul').on('click','a, li', function(event){
+            console.log(this.tagName);
+        })
+    </script>
+
+    <!-- 6주차 javascript 실습-->
+     <h1>6주차 javascript 실습</h1>
+     <h2>다크모드토글</h2>
+     <input id="darktoggle" type="button" value="darktoggle">
+     <h2>실시간 텍스트 입력</h2>
+     <input id="textinput" type="text" placeholder="텍스트를 입력하세요">
+     <div id="textoutput"></div>
+     <h2>덧셈 계산기</h2>
+     <input id="firstelement" type="text" placeholder="숫자를 입력하세요">
+     <input id="secondelement" type="text" placeholder="숫자를 입력하세요">
+     <input id="sum" type="button" value="더하기">
+     <div id="sumoutput">합계 : </div>
+
+     <!-- 7주차 javascript 실습-->
+      <h1>7주차 javascript 실습</h1>
+      <h2>목록추가</h2>
+      <input id="addli" type="text" placeholder="입력">
+      <button id="addlibtn">목록 추가</button>
+      <ul id="addul"></ul>
+      <h2>마우스에 따른 설명박스 표기</h2>
+      <div id="target_word">
+        설명을 보고 싶은 용어
+        <div id="information" class="hidden">설명</div>
+      </div>
+      <h2>입력한 문자열을 html 엘리먼트로 표기</h2>
+      <input id="html_input" type="text">
+      <div id="html_output"></div>
+      <!--8주차 실습-->
+      <h1>8주차 실습</h1>
+      <h2>탭 인터페이스</h2>
+      <div class="tabs">
+        <button class="tab" data-id="0">HTML</button>
+        <button class="tab" data-id="1">CSS</button>
+        <button class="tab" data-id="2">JS</button>
+      </div>
+
+      <section id="panel-0" class="panel hidden">HTML 설명</section>
+      <section id="panel-1" class="panel hidden">CSS 설명</section>
+      <section id="panel-2" class="panel hidden">JS 설명</section>
+      <h2>모달 창(팝업)</h2>
+      <button id="open_modal">모달 열기</button>
+      <div class="overlay hidden">
+        <div class="modal">
+            <p>이것이 모달이다</p>
+            <button id="close_modal">모달 닫기</button>
+        </div>
+      </div>
+      <h2>배열기반 리스트 렌더링</h2>
+      <ul id="scriptli"></ul>
+
+
+</body>
+</html>

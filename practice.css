@@ -1,0 +1,54 @@
+.tab.active{
+    background:skyblue;
+    color:violet;
+}
+.overlay.hidden{
+    display:none;
+}
+.panel.hidden{
+    display:block;
+    overflow:hidden;
+    opacity:0;
+    max-height:0;
+}
+.hidden{
+    display:none;
+}
+.panel{
+    transition:opacity 0.5s ease-in-out;
+}
+.panel.show{
+    opacity:1;
+}
+body.bodylock{
+    overflow:hidden;
+}
+.overlay{
+    display:flex;
+    position:fixed;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(0,0,0,0.5);
+    width:20rem;
+    height:20rem;
+    border:1px black solid;
+    top:0;
+    left:0;
+}
+.modal{
+    background:white;
+    padding:2rem;
+    border-radius:8px;
+}
+#target_word{
+    position:relative;
+}
+#information{
+    position:absolute;
+    background:black;
+    color:white;
+    padding:5px;
+    border-radius:6px;
+    top:0;
+    left:0;
+}

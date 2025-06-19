@@ -31,7 +31,7 @@ let grid = {
     setgridcolor: function(color){
         // document.querySelector('.김덕배란누구인가').style.borderColor=color;
         // document.querySelector('h1').style.borderColor=color;
-        $('.김덕배란누구인가').css('border-color',color);
+        $('.list').css('border-color',color);
         $('h1').css('border-color',color);
     }
 }
